@@ -1,6 +1,4 @@
-# ctf-writeups
-
-header: El comienzo
+# Mi historia con el hacking CTF
 
 En 2024-2025 me tuve acercamiento a la ciberseguridad mediante laboratorios en maquinas virtuales simulando vulnerabilidades.
 
