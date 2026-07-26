@@ -1,0 +1,29 @@
+link original: https://burple.gitbook.io/burple/dockerlabs/muy-facil/breakmyssh
+
+# BreakMySSH
+
+<figure><img src="/files/zhhoodeycx85p0S3VFYe" alt=""><figcaption></figcaption></figure>
+
+## Fase de reconocimiento
+
+Hacemos un escaneo de nmap para mostrar los puertos abiertos que tiene el dispositivo:
+
+* 22 SSH
+
+`nmap -p- --min-rate 10000 172.17.0.2`
+
+<figure><img src="/files/XnjLlxllXTYBgaHLmw1N" alt=""><figcaption></figcaption></figure>
+
+## Fase de intrusión y escalada de privilegios
+
+Solo esta el puerto ssh activo, así que habrá que hacer fuerza bruta para entrar, vamos a hacerlo con hydra, y como no sabemos que usuarios hay vamos a hacer fuerza bruta a root
+
+<figure><img src="/files/kiyeK72bV4Ui6G3VroNI" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="/files/0PDUQR1huvtdroAKiMyQ" alt=""><figcaption></figcaption></figure>
+
+Root!
+
+## Conclusión
+
+Ha sido una maquina muy sencillita y rápida, perfecta para gente nueva en el mundo del hacking web, con **nmap** hemos visto los puertos que se encontraban abiertos y nos hemos aprovechado de un contraseña débil del puerto ssh la cual hemos conseguido haciendo fuerza bruta con **hydra.**
